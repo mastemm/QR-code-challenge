@@ -1,26 +1,52 @@
 @media only screen and (max-width: 768px) {
-
-
 }
 
-
-
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 
 body {
-    background-color: #d5e1ef;
+  background-color: #d5e1ef;
+  display: flex;
+  align-items: center;
+  height: 100vh;
 }
-
+.card {
+  border-radius: 5%;
+  margin: 0 2rem;
+  padding: 1rem;
+  width: 20rem;
+}
+.QRcode {
+  width: 100%;
+  height: auto;
+  border-radius: 5%;
+}
 section {
-    background-color: white;
-    padding: 8px;
-    display: flex;
-    flex-direction: column;
-
+  background-color: white;
+  padding: 0.5rem 0.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
-.QRcodeImg {
-    background-image: url(images\image-qr-code.png);
+section .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: sans-serif;
 }
+p {
+  color: grey;
+}
+
+@media screen and (min-width: 420px) {
+  .card {
+    margin: auto;
+  }
+} ;
